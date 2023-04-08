@@ -1,0 +1,59 @@
+Notes
+
+1.Node js is a Java script server based frame Work.
+2.implementyed in v8 google engine
+
+3.it is an open source, cross plactform env for developing server side and networking applications
+4.it is a low level library for JS
+
+5. provides various modules which ease the process of creating applications.
+
+===================================================================================
+
+features : 
+
+1. it is asynchronous and event based I/O model
+
+2. Single threaded application
+
+3. performance oriented
+
+4.Absence of buffering :  instead of buffering the data node.js applications output the data in chunks
+
+====================================================================================
+
+Preference :
+
+1. I/O bound
+2. DIRT
+3. data streaming
+4. JSON API
+5. Sinbgle page
+
+===================================================================================
+
+not prefered : 
+
+1. CPU intense algorithms 
+
+NPM -> Node package manager
+https://www.npmjs.com
+
+Node js extencively uses callbacks, all the api's functionalities of Node js also is created in such a way that they use and support callbacks 
+
+==========================================================================================
+
+Blocking Code : we can go to next step only after the present step is completed.
+
+ex : open file read and delete
+
+step 1 : open file
+2: wait till it loads
+3: read file 
+4: then delete.
+
+3 rd dependent on 1, 2 and 4 is dependent on 3 so, this is blocking code
+
+
+==========================================================================================
+
