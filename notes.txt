@@ -57,3 +57,18 @@ step 1 : open file
 
 ==========================================================================================
 
+
+call back vs Events 
+event emmiter and event Subscriber
+event emitter class, events and properties
+demo of event emitter example
+
+
+callback -> request-Reply  -> all results in one go -> error or result
+events -> publisher - subscriber -> results keep arriving gradually -> partial results before error
+
+In callback, the function executes after the asynchronous function has returned its result whereas a function in event executes as soon as the corresponding event has been fired. 
+
+https://www.geeksforgeeks.org/callbacks-and-events-in-node-js/
+https://nodejs.org/dist/latest-v12.x/docs/api/events.html#events_class_eventemitter
+
