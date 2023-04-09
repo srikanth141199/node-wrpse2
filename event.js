@@ -13,6 +13,9 @@ eventEmitter.on('scream', myEventHandler);  // this will be executed when eventE
 eventEmitter.emit('scream'); //emit is used to fire an event. 
 
 
+var name = "event module";
+module.exports.name = name;
+
 
 
 

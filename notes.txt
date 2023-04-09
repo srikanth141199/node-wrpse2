@@ -72,3 +72,133 @@ In callback, the function executes after the asynchronous function has returned 
 https://www.geeksforgeeks.org/callbacks-and-events-in-node-js/
 https://nodejs.org/dist/latest-v12.x/docs/api/events.html#events_class_eventemitter
 
+
+============================================================================================
+
+File System
+
+File system module
+Sync and asyn filr read methods
+writing onto a file
+Getting stats of the file and analyzing the output
+
+
+1. file I/O can be performed by using a file system modelu.
+2. var variableName = requied(fs) -> import of file module.
+
+Synchronous:
+
+var content = fs.readFileSync("fileName.txt"); 
+console.log(content.toString());
+
+Asynchronous:
+
+Asynchronous takes last parameter as callback() funct6ion and the 1st parameter ofn the  callback() is error.
+
+fs.readFile("fileName.txt",function(error,content){
+  if(err){
+    return console.log(error);
+  }
+console.log(content.toString());
+});
+
+it is prefered async over sync as async never blocks code where as Sync blocks the code.
+
+Writing onto a file : 
+
+var variableName = requied(fs)
+fs.writeFile("fileName.txt","Hello Duke", function(error){
+if(error){
+  return console.log(error);
+}
+
+console.log("writing Done!);
+})
+
+writeFile is by default Async
+
+https://nodejs.org/api/fs.html
+
+==================================================================================
+
+File Stream
+
+ReadStream and WriteStream
+Events emitted by streams
+ReadStream example
+Stream piping
+
+Streams : it is a Object used for read data from a source and write data to a destination in a continuous fashion.
+
+Readable : used for Read operation.
+Writable : used for write Operation
+Duplex : used for both read and write
+Transform :  Type of Duplex stream where output is computed based on input.
+
+Read and write are class of fs stream.
+
+Stream is a EventEmitter Instance emits events at different instances of time
+
+few are:
+
+data : fired when data available to read.
+end : fired when no more data is there.
+error : fired when there is error in receiving or writing data
+finish : fired when all the data is flushed to underlying system.
+
+https://nodejs.org/api/stream.html#readable-streams
+
+https://www.tutorialspoint.com/nodejs/nodejs_streams.htm#:~:text=Readable%20%E2%88%92%20Stream%20which%20is%20used,is%20computed%20based%20on%20input.
+
+
+===============================================================================================================================================================
+
+Modules 
+
+Node JS Modules
+NPM
+Npm options
+Global vs Local package installations
+package.json and it's important sections
+Demo of Module creation and usage
+
+Modules &npm :
+
+Modules rae libraries in Java script which provides services and functionalities
+
+there are 3 type of modules
+ -> Built-in 
+        nodejs.org/api -> has the list ex: File System
+ -> Third Party
+        Modules contributed by community
+        can be accessed by npm
+ -> User Created
+        Created by user in moduler way
+        once created as a .js file, can be used in our program
+
+NPM is a tool that helps to manage the NodeJS modules ->install/update/delete/version control/manage dependencies
+NPM usually comes bundled with Node.js
+
+Global vs Local installation :
+
+By default all the modules are installed in local mode.
+
+npm ls -> list of all the local installed modules
+
+npm install express -g -> installs the module in global -> i.e the module will be stored in system directory and can be used in CLI of any node.js but can't be imported using require()
+
+npm ls -g -> list of all the globally installed modules
+
+
+when to install Local/Global
+
+If installing something that we require in our program using require() then install it locally
+
+If installing something that is required in shell, on the command line or you are not directely using it in your programs, but some other modules would use it, install it globally, so that its binaries end up in your PATH environment variable.
+
+package.json : 
+
+it is present in the root module
+specifies the modules present and related version
+
+Demo of Module Creation and Usage : 
