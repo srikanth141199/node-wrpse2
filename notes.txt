@@ -125,7 +125,7 @@ File Stream
 
 ReadStream and WriteStream
 Events emitted by streams
-ReadStream example
+ReadStream example 
 Stream piping
 
 Streams : it is a Object used for read data from a source and write data to a destination in a continuous fashion.
@@ -147,6 +147,8 @@ error : fired when there is error in receiving or writing data
 finish : fired when all the data is flushed to underlying system.
 
 https://nodejs.org/api/stream.html#readable-streams
+
+https://www.tutorialsteacher.com/nodejs/nodejs-file-system
 
 https://www.tutorialspoint.com/nodejs/nodejs_streams.htm#:~:text=Readable%20%E2%88%92%20Stream%20which%20is%20used,is%20computed%20based%20on%20input.
 
@@ -204,5 +206,5 @@ specifies the modules present and related version
 ================================================================================================================================================
 
 Grunt js ?
-REPL ?
+REPL  : https://www.tutorialsteacher.com/nodejs/nodejs-console-repl
 Node Inspecter ?
