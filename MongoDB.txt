@@ -1,0 +1,28 @@
+Topics : 
+
+Mongo DB
+Using MongoDb with Node js
+steps to create database and collection in Mongo DB
+Acess Mongo DB data from Node js
+
+=============================================================================
+
+leading NoSQL database
+Uses JSON for data structure
+open source and document based designed for easy of development
+
+npm install mongodb
+
+==================================================================================
+
+use nodetest1 -> use is the instruction to create DB and nodetest1 is the DB Name
+db.usercollection.insert({"username" : "Srikanth","email" : "Srikanthkollepara@gmail.com"});
+
+this will insert the data into user collection.
+
+db.usercollection.find().pretty(); -> display all the data.
+
+insert is used for inserting data inside nodetest1(DB) in thge collection usercollection()
+
+pretty() will display data in beautify format.
+
