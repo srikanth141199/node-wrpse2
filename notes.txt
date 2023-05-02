@@ -1,12 +1,16 @@
 Notes
 
 1.Node js is a Java script server based frame Work.
-2.implementyed in v8 google engine
+2.implementyed in v8 google engine.
 
 3.it is an open source, cross plactform env for developing server side and networking applications
 4.it is a low level library for JS
 
 5. provides various modules which ease the process of creating applications.
+
+6.this is used for backend.
+
+Node.js, is a server-side JavaScript runtime environment. It allows developers to use JavaScript on the server-side, which was previously only possible on the client-side in web browsers. Node.js provides a runtime environment that includes a built-in library of modules and tools for building scalable and high-performance web applications.
 
 ===================================================================================
 
